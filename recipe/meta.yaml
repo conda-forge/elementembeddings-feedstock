@@ -1,5 +1,5 @@
 {% set name = "ElementEmbeddings" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/elementembeddings-{{ version }}.tar.gz
-  sha256: 15064f5a3d436a68b66874da556a6a102c66c4077e4153181adcc6e6fec15504
+  sha256: bb2c320bef83a752d8ebc939b464a99f482ddbe74ca9a03a1b01e60107b54afa
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
